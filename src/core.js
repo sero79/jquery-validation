@@ -24,7 +24,7 @@ $.extend($.fn, {
 
 		if ( validator.settings.onsubmit ) {
 
-			this.validateDelegate( ":submit", "click", function( event ) {
+			this.validateDelegate( ":submit, :image", "click", function( event ) {
 				if ( validator.settings.submitHandler ) {
 					validator.submitButton = event.target;
 				}
